@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce Cart</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/c392abb882.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,700;1,300&family=Nunito&family=Prompt:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row header" style="background-color:white;height: 80px;">
+            <div class="col col-lg-10 col-md-8 col-sm-6">
+               <a href="#" class="logo" style="text-decoration: none;"><h3 style="font-size: 1.5rem;font-weight: bolder;color: #000000;padding-top: 20px;padding-left: 20px;" id="headline">Men's Trendy</h3></a>
+              </div>
+              <div class="box col col-lg-2 col-md-2 col-sm-6 col-2" style="padding: 30px 0 0 0;font-size: 2-5rem;">
+                <i class="fa-solid fa-cart-shopping" class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#demo" id="cart-icon"><span class="cart-count" style="color: red;font-size: 20px;">&nbsp;0</span>
+                </i>
+              </div>
+
+             <div class="cart">
+                <div class="cart-title">Cart Items</div>
+                <div class="cart-content">
+<!--
+                  <div class="cart-box">
+                    <img src="mockup_of_black_hoodie_pack_front_and_back.jpg" class="cart-img">
+                    <div class="detail-box">
+                      <div class="cart-shirt-title">Hoodie</div>
+                      <div class="price-box">
+                        <div class="cart-price">$50</div>
+                        <div class="cart-amt">$50</div>
+                      </div>
+                      <input type="number" value="1" class="cart-quantity">
+                    </div>
+                    <i class="fa-solid fa-trash-can cart-remove" name="trash"></i>
+                  </div>
+
+                  <div class="cart-box">
+                    <img src="mockup_of_black_hoodie_pack_front_and_back.jpg" class="cart-img">
+                    <div class="detail-box">
+                      <div class="cart-shirt-title">Hoodie</div>
+                      <div class="price-box">
+                        <div class="cart-price">$50</div>
+                        <div class="cart-amt">$50</div>
+                      </div>
+                      <input type="number" value="1" class="cart-quantity">
+                    </div>
+                    <i class="fa-solid fa-trash-can cart-remove" name="trash"></i>
+                  </div>
+                 </div>
+ -->
+            </div>
+            <div class="total">
+              <div class="total-title">Total</div>
+              <div class="total-price">$ 0</div>
+            </div>
+<!-- 
+             <button class="btn-buy">place Order</button> -->
+
+             <i name = "close" id = "cart-close" class="fa fa-window-close" aria-hidden="true"></i>
+        </div>
+
+            <!-- Products -->
+
+        <div class="row row-cols-3 bg-secondary fullContainer">
+            <div class="col col-lg-4 col-md-6 col-sm-12 col-12">
+                <div class="card" style="width:100%;height:fit-content;margin-top: 5px;margin-bottom: 5px;border: none;box-shadow:15px 20px 20px rgba(0, 0, 0, 0.2),inset 4px 4px 10px white;border-radius: 20px;display: flex;align-items: center;">
+                    
+                    <div class="card-body">
+                      <img src="whiteshirt.jpg" class="card-img-top" alt="T-shirt" style="border-radius: 20px;">
+                      <h5 class="card-title"style="font-weight: bolder;display: flex;justify-content: center;padding-top: 15px;">MOCKUP WHITE T-SHIRT</h5>
+                      <P class="card-text"style="font-weight:bolder;display: flex;justify-content: center;">$ 50</P>
+                      <a href="#" class="btn add_cart" style="font-weight:bolder;border-radius:20px;background-color:#0BDA51;display: flex;justify-content: center;">Add to cart</a>
+                    </div>
+                  </div>
+            </div>
+            <div class="col col-lg-4 col-md-6 col-sm-12 col-12">
+                <div class="card" style="width:100%;height:fit-content;margin-top: 5px;margin-bottom: 5px;border: none;box-shadow:15px 20px 20px rgba(0,0,0,.3),inset 4px 4px 10px white;border-radius: 20px;display: flex;align-items: center;">
+                    
+                    <div class="card-body">
+                      <img src="redshirt.jpg" class="card-img-top" alt="T-shirt" style="border-radius:20px;">
+                      <h5 class="card-title" style="font-weight: bolder;display: flex;justify-content: center;padding-top: 15px;">MOCKUP RED T-SHIRT</h5>
+                      <P class="card-text"style="font-weight:bolder;display: flex;justify-content: center;">$ 50</P>
+                      <a href="#" class="btn add_cart" style="font-weight:bolder;border-radius:30px;background-color:#0BDA51;display: flex;justify-content: center;">Add to cart</a>
+                    </div>
+                  </div>
+            </div>
+            <div class="col col-lg-4 col-md-6 col-sm-12 col-12">
+                <div class="card" style="width:100%;height:fit-content;margin-top: 5px;margin-bottom: 5px;border: none;box-shadow:15px 20px 20px rgba(0,0,0,.3),inset 4px 4px 10px white;border-radius: 20px;display: flex;align-items: center;">
+                    
+                    <div class="card-body">
+                      <img src="blueshirt.jpg" class="card-img-top" alt="blue T-shirt" style="border-radius:20px;">
+                      <h5 class="card-title" style="font-weight: bolder;display: flex;justify-content: center;padding-top: 15px;">BLUE T-SHIRT</h5>
+                      <P class="card-text"style="font-weight:bolder;display: flex;justify-content: center;">$ 50</P>
+                      <a href="#" class="btn add_cart" style="font-weight:bolder;border-radius:20px;background-color:#0BDA51;display: flex;justify-content: center;">Add to cart</a>
+                    </div>
+                  </div>
+          </div>
+          <div class="col col-lg-4 col-md-6 col-sm-12 col-12" >
+            <div class="card" style="width:100%;height:fit-content;margin-top: 5px;margin-bottom: 5px;border: none;box-shadow:15px 20px 20px rgba(0, 0, 0, 0.2),inset 4px 4px 10px white;border-radius: 20px;display: flex;align-items: center;">
+                
+                <div class="card-body">
+                  <img src="greensweater.jpg" class="card-img-top" alt="green-sweater" style="border-radius: 30px;">
+                  <h5 class="card-title" style="font-weight: bolder;display: flex;justify-content: center;padding-top: 15px;">GREEN SWEATER</h5>
+                  <P class="card-text"style="font-weight:bolder;display: flex;justify-content: center;">$ 100</P>
+                  <a href="#" class="btn add_cart" style="font-weight:bolder;border-radius:20px;background-color:#0BDA51;display: flex;justify-content: center;">Add to cart</a>
+                </div>
+              </div>
+          </div>
+          <div class="col col-lg-4 col-md-6 col-sm-12 col-12">
+            <div class="card" style="width:100%;height:fit-content;margin-top: 5px;margin-bottom: 5px;border: none;box-shadow:15px 20px 20px rgba(0, 0, 0, 0.2),inset 4px 4px 10px white;border-radius: 20px;display: flex;align-items: center;">
+                
+                <div class="card-body">
+                  <img src="pinksweater.jpg" class="card-img-top" alt="pink-sweater"style="border-radius: 30px;">
+                  <h5 class="card-title" style="font-weight: bolder;display: flex;justify-content: center;padding-top: 15px;">PINK SWEATER</h5>
+                  <P class="card-text"style="font-weight:bolder;display: flex;justify-content: center;">$ 100</P>
+                  <a href="#" class="btn add_cart" style="font-weight:bolder;border-radius:20px;background-color:#0BDA51;display: flex;justify-content: center;">Add to cart</a>
+                </div>
+              </div>
+          </div>
+          <div class="col col-lg-4 col-md-6 col-sm-12 col-12">
+            <div class="card" style="width:100%;height:fit-content;margin-top: 5px;margin-bottom: 5px;border: none;box-shadow:15px 20px 20px rgba(0, 0, 0, 0.2),inset 4px 4px 10px white;border-radius: 20px;display: flex;align-items: center;">
+                <div class="card-body">
+                  <img src="whitesweater.jpg" class="card-img-top" alt="white-sweater"style="border-radius: 10px; width:100%;">
+                  <h5 class="card-title" style="font-weight: bolder;display: flex;justify-content: center;padding-top: 15px;">WHITE SWEATER</h5>
+                  <P class="card-text"style="font-weight:bolder;display: flex;justify-content: center;">$ 100</P>
+                  <a href="#" class="btn add_cart" style="font-weight:bolder;border-radius:20px;background-color:#0BDA51;display: flex;justify-content: center;">Add to cart</a>
+                </div>
+              </div>
+          </div>
+        
+        </div>
+    </div>
+    <script src="intro.js"></script>
+</body>
+</html>
